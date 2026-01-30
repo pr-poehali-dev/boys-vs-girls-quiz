@@ -71,7 +71,7 @@ const Index = () => {
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-2xl shadow-xl">
-                <p className="text-3xl font-bold">7-14 лет</p>
+                <p className="text-3xl font-bold">7-16 лет</p>
                 <p className="text-sm">Возраст участников</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Index = () => {
             Что такое квиз <span className="text-primary">Мальчики</span> VS <span className="text-secondary">Девочки</span>?
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <Card className="border-2 border-primary/20 hover:border-primary transition-all hover:shadow-xl animate-fade-in">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -104,14 +104,14 @@ const Index = () => {
             <Card className="border-2 border-secondary/20 hover:border-secondary transition-all hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <CardHeader>
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                  <Icon name="PartyPopper" size={32} className="text-secondary" />
+                  <Icon name="Music" size={32} className="text-secondary" />
                 </div>
-                <CardTitle className="text-2xl font-heading">Веселая атмосфера</CardTitle>
+                <CardTitle className="text-2xl font-heading">Веселые танцы и песни</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Яркие декорации, музыка и интерактивные игры. 
-                  Дети в восторге от каждой минуты!
+                  Веселые танцы и песни на протяжении всей поездки. 
+                  Дети не заскучают ни на минуту!
                 </p>
               </CardContent>
             </Card>
@@ -121,12 +121,27 @@ const Index = () => {
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Train" size={32} className="text-accent" />
                 </div>
-                <CardTitle className="text-2xl font-heading">Ретро трамвай</CardTitle>
+                <CardTitle className="text-2xl font-heading">Ретро-трамвай</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
                   Уникальная локация — настоящий трамвай 1950-х годов. 
-                  Романтика и ностальгия в каждой детали!
+                  Дети узнают частичку истории пермского транспорта!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 hover:border-primary transition-all hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Icon name="Pizza" size={32} className="text-primary" />
+                </div>
+                <CardTitle className="text-2xl font-heading">Вкусная пицца</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Вкусная пицца и напитки каждому ребенку.
+                  Никто не останется голодным!
                 </p>
               </CardContent>
             </Card>
@@ -140,26 +155,33 @@ const Index = () => {
                   <li className="flex gap-4">
                     <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">Деление на команды</h4>
-                      <p className="text-gray-600">Мальчики против девочек! Каждая команда выбирает капитана</p>
+                      <h4 className="font-semibold text-lg mb-1">Встреча на остановке</h4>
+                      <p className="text-gray-600">Мы встречаем вас на остановке "Разгуляй", менеджер заранее с вами свяжется и даст рекомендации</p>
                     </div>
                   </li>
                   <li className="flex gap-4">
                     <div className="w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">5 раундов вопросов</h4>
-                      <p className="text-gray-600">Разные темы: от мультфильмов до науки. Баллы за правильные ответы!</p>
+                      <h4 className="font-semibold text-lg mb-1">Деление на команды</h4>
+                      <p className="text-gray-600">В командах нет капитанов, а это значит ребята должны вместе решить логические задачи и вместе прийти к ответу</p>
                     </div>
                   </li>
                   <li className="flex gap-4">
                     <div className="w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">Активные игры</h4>
-                      <p className="text-gray-600">Между раундами — веселые подвижные задания и конкурсы</p>
+                      <h4 className="font-semibold text-lg mb-1">5 раундов вопросов</h4>
+                      <p className="text-gray-600">Вопросы на разные темы, а также разной формы. Где-то дети должны будут петь, где-то рисовать, а где-то внимательно слушать и отвечать</p>
                     </div>
                   </li>
                   <li className="flex gap-4">
                     <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-1">Активные игры</h4>
+                      <p className="text-gray-600">На протяжении рейса дети не заскучают, будут фотографировать, веселиться, шутить, играть, петь и многое многое другое!</p>
+                    </div>
+                  </li>
+                  <li className="flex gap-4">
+                    <div className="w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">5</div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Награждение победителей</h4>
                       <p className="text-gray-600">Призы для всех участников! Никто не уходит без подарков 🎁</p>
@@ -185,83 +207,29 @@ const Index = () => {
             Забронировать участие 🎫
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
-            Заполните форму, и мы свяжемся с вами для подтверждения
+            Свяжитесь с нами для бронирования
           </p>
 
           <Card className="border-2 border-primary/20 shadow-xl">
-            <CardContent className="p-8">
-              <div className="mb-6">
-                <Label className="text-lg mb-3 block">Тип бронирования</Label>
-                <RadioGroup value={bookingType} onValueChange={(v) => setBookingType(v as any)}>
-                  <div className="flex items-center space-x-2 mb-3 p-4 border-2 rounded-xl hover:border-primary transition-colors cursor-pointer">
-                    <RadioGroupItem value="individual" id="individual" />
-                    <Label htmlFor="individual" className="cursor-pointer flex-grow">
-                      <div className="font-semibold">Индивидуальное</div>
-                      <div className="text-sm text-gray-600">Для 1-5 детей</div>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2 p-4 border-2 rounded-xl hover:border-secondary transition-colors cursor-pointer">
-                    <RadioGroupItem value="group" id="group" />
-                    <Label htmlFor="group" className="cursor-pointer flex-grow">
-                      <div className="font-semibold">Групповое (школьный класс)</div>
-                      <div className="text-sm text-gray-600">От 10 детей — специальная цена!</div>
-                    </Label>
-                  </div>
-                </RadioGroup>
+            <CardContent className="p-8 text-center">
+              <div className="mb-8">
+                <Icon name="Phone" size={64} className="text-primary mx-auto mb-4" />
+                <h3 className="text-3xl font-bold font-heading mb-2">Обращайтесь по номеру</h3>
+                <a href="tel:+79125818668" className="text-4xl md:text-5xl font-bold text-primary hover:text-primary/80 transition-colors">
+                  +7 912 581 8668
+                </a>
               </div>
 
-              <div className="space-y-4">
-                <div>
-                  <Label htmlFor="name">Ваше имя *</Label>
-                  <Input id="name" placeholder="Как к вам обращаться?" className="mt-1" />
-                </div>
-
-                <div>
-                  <Label htmlFor="phone">Телефон *</Label>
-                  <Input id="phone" type="tel" placeholder="+7 (___) ___-__-__" className="mt-1" />
-                </div>
-
-                <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="mt-1" />
-                </div>
-
-                <div>
-                  <Label htmlFor="children">Количество детей *</Label>
-                  <Input id="children" type="number" min="1" placeholder="Сколько детей?" className="mt-1" />
-                </div>
-
-                {bookingType === 'group' && (
-                  <div className="animate-fade-in">
-                    <Label htmlFor="school">Название школы/организации</Label>
-                    <Input id="school" placeholder="Школа №..." className="mt-1" />
+              <div className="bg-gradient-to-r from-accent/10 to-secondary/10 rounded-2xl p-6 mt-8">
+                <div className="flex items-start gap-4">
+                  <Icon name="Gift" size={32} className="text-accent flex-shrink-0 mt-1" />
+                  <div className="text-left">
+                    <h4 className="font-bold text-xl mb-2 text-accent">Секретный подарок!</h4>
+                    <p className="text-gray-700">
+                      Если хотите подарок от создателей квиза, скажите тайную фразу <span className="font-bold text-primary">"Эй, красавчик"</span> менеджеру и забирайте свой подарок для класса!
+                    </p>
                   </div>
-                )}
-
-                <div>
-                  <Label htmlFor="date">Предпочтительная дата</Label>
-                  <Input id="date" type="date" className="mt-1" />
                 </div>
-
-                <div>
-                  <Label htmlFor="comments">Комментарий</Label>
-                  <Textarea 
-                    id="comments" 
-                    placeholder="Особые пожелания, вопросы..." 
-                    className="mt-1 min-h-24"
-                  />
-                </div>
-
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 text-white text-lg py-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
-                >
-                  Отправить заявку 🚀
-                </Button>
-
-                <p className="text-sm text-gray-500 text-center">
-                  * Обязательные поля
-                </p>
               </div>
             </CardContent>
           </Card>
