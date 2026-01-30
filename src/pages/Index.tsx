@@ -288,78 +288,39 @@ const Index = () => {
             Контакты 📞
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-md mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Phone" className="text-primary" />
-                  Телефон
+                <CardTitle className="flex items-center gap-2 justify-center">
+                  <Icon name="Phone" className="text-primary" size={32} />
+                  <span className="text-2xl">Телефон</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-2xl font-bold text-primary">+7 (999) 123-45-67</p>
-                <p className="text-sm text-gray-600 mt-1">Звоните с 10:00 до 20:00</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Mail" className="text-secondary" />
-                  Email
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xl font-bold text-secondary">quiz@tram.ru</p>
-                <p className="text-sm text-gray-600 mt-1">Ответим в течение часа</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="MapPin" className="text-accent" />
-                  Адрес
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-bold">г. Москва, ул. Трамвайная, д. 1</p>
-                <p className="text-sm text-gray-600 mt-1">5 минут от метро "Парк культуры"</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Clock" className="text-primary" />
-                  Время работы
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-bold">Суббота и воскресенье</p>
-                <p className="text-sm text-gray-600">11:00, 14:00, 17:00</p>
-                <p className="text-sm text-gray-600 mt-2">Будни — по договоренности</p>
+              <CardContent className="text-center">
+                <a href="tel:+79125818668" className="text-3xl md:text-4xl font-bold text-primary hover:text-primary/80 transition-colors block mb-2">
+                  +7 912 581 8668
+                </a>
+                <p className="text-sm text-gray-600">Звоните с 10:00 до 20:00</p>
               </CardContent>
             </Card>
           </div>
 
-          <Card className="mt-8 border-2 border-primary/20">
+          <Card className="mt-8 border-2 border-primary/20 max-w-md mx-auto">
             <CardContent className="p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <Icon name="MessageCircle" size={32} className="text-primary" />
+              <div className="flex items-center gap-4 mb-6 justify-center">
+                <Icon name="Share2" size={32} className="text-primary" />
                 <h3 className="text-2xl font-bold font-heading">Мы в соцсетях</h3>
               </div>
-              <div className="flex gap-4">
-                <Button size="lg" variant="outline" className="border-2">
-                  <Icon name="Instagram" className="mr-2" /> Instagram
+              <a 
+                href="https://vk.com/market/product/detskiy-quotkviz-v-tramvaequot-dlya-shkolnikov-85706599-5757850" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button size="lg" className="w-full bg-[#0077FF] hover:bg-[#0077FF]/90 text-white text-lg">
+                  <Icon name="Share2" className="mr-2" size={24} /> Перейти в VK
                 </Button>
-                <Button size="lg" variant="outline" className="border-2">
-                  <Icon name="MessageCircle" className="mr-2" /> Telegram
-                </Button>
-                <Button size="lg" variant="outline" className="border-2">
-                  <Icon name="Share2" className="mr-2" /> VK
-                </Button>
-              </div>
+              </a>
             </CardContent>
           </Card>
         </div>
