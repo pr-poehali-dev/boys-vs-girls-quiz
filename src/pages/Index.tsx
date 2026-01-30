@@ -246,16 +246,25 @@ const Index = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/515b99a9-917d-479c-9b70-9f87d0848d1c.jpg', title: 'Квиз для детей' },
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/8f322046-0e37-45de-a0f4-2143b1508bfd.jpg', title: 'В ретро трамвае' },
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/6fe40431-0280-42b2-a466-320e4bf38a02.jpg', title: 'Веселые моменты' },
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/0bb6dbaa-a3e7-4350-8854-272c4dba84aa.jpg', title: 'Квиз в трамвае' },
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/8190f8e6-f52c-4a69-a62b-f16bdd14f36a.jpg', title: 'Пицца для детей' },
+              { url: 'https://cdn.poehali.dev/projects/fc541f70-57bb-4821-83a9-87387c8c9752/bucket/c6e55e1b-d7bb-43e4-979e-650878550884.jpg', title: 'Задания квиза' },
+            ].map((photo, i) => (
               <div 
                 key={i} 
-                className="relative aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-all"
+                className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-all"
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Icon name="Image" size={48} className="text-gray-400" />
-                </div>
+                <img 
+                  src={photo.url} 
+                  alt={photo.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                  <p className="text-white font-semibold">Фото {i}</p>
+                  <p className="text-white font-semibold">{photo.title}</p>
                 </div>
               </div>
             ))}
